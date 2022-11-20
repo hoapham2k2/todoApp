@@ -1,0 +1,98 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+html,
+body,
+#root
+{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#root
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.TodoApp
+{
+
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+
+    .header__container
+    {
+        background-color: #678c89;
+        color: #fff;
+        padding: 10px 15px;
+
+        .header__title
+        {
+            font-size: 25px;
+            line-height: 1.447em;
+            margin: 0px;
+        }
+    }
+
+    .AddTodo
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__input
+        {
+            flex: 1;
+        }
+
+        &__add
+        {
+            padding: 16px 8px;
+        }
+    }
+
+    .todos
+    {
+
+        .TodoItem
+        {
+            display: flex;
+            justify-content: space-between;
+
+            .container
+            {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            &__checkbox
+            {}
+
+            &__title
+            {
+                overflow: hidden;
+            }
+
+            &__delete
+            {}
+        }
+    }
+
+
+
+
+}
